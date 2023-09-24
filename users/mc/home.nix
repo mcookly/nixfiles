@@ -15,8 +15,18 @@
   ];
 
   home.file = {
-    ".config/tmux/themes".source = ./files/tmux/themes;
-    ".config/emacs".source = ./files/emacs;
+    ".config/emacs" = {
+      source = ./files/emacs;
+      recursive = true;
+    };
+    ".config/fish" = {
+      source = ./files/fish;
+      recursive = true;
+    };
+    ".config/tmux/themes" = {
+      source = ./files/tmux/themes;
+      recursive = true;
+    };
   };
 
   home.sessionVariables = {
