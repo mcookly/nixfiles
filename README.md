@@ -26,4 +26,4 @@ I use GNU Emacs.  If you're looking for my `.emacs.d`, it's [here](./users/mc/fi
 
 ## License
 
-My code is under `0BSD`, so use whatever you want!  If I've taken code from somewhere else, it will be explicitly marked as such.
+My code is under `0BSD` (see [`LICENSE`](./LICENSE)), so use whatever you want!  If I've taken code from somewhere else, it will be explicitly marked as such.
