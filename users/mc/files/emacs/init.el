@@ -241,19 +241,17 @@
   ;; functions.
   (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
 
-  ;; For a more ergonomic setup on MacOS, and to mimic *nix keyboards, I remap
-  ;; the following:
+  ;; Since I only use Emacs on MacOS/Darwin, I use Mac-esque bindings.
   ;; + Left CTRL:  CTRL
   ;; + Left OPT:   Meta
-  ;; + Left CMD:   Meta
+  ;; + Left CMD:   CTRL
   ;; + Right CMD:  CTRL
-  ;; + Right OPT:  nil (Mac's compose key)
+  ;; + Right OPT:  Meta
   ;; The goal is to use the thumbs and ring fingers more than pinkies.  I no
   ;; longer have access to Mac's combining key, but I can do without it.  The
   ;; CMD-CTRL mapping feels more in line with Mac's keybinding philosophy.
-  (setq ns-command-modifier 'meta
-        ns-right-command-modifier 'control
-        ns-right-option-modifier 'nil))
+  (setq ns-command-modifier 'control
+        ns-right-command-modifier 'control))
 
 
 ;; -----------------------------------------------------------------------------
