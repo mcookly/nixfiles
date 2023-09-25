@@ -1,8 +1,7 @@
 theme = "base16_transparent"
 
 [editor]
-gutters = ["line-numbers", "spacer", "diff", "spacer"]
-line-number = "relative"
+gutters = ["diff"]
 lsp.enable = false
 
 [editor.cursor-shape]
