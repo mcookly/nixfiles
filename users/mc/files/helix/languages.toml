@@ -1,0 +1,7 @@
+[[language]]
+name = "lua"
+indent = { tab-width = 3, unit = "   " }
+
+[[language]]
+name = "markdown"
+auto-pairs = false

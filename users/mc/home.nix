@@ -5,26 +5,26 @@
 
   home.packages = with pkgs; [
     emacs29
+    fribidi
     fzf
     liberation_ttf
     mdcat
     pandoc
     typst
     vale
-    zk
   ];
 
   home.file = {
+    ".config/alacritty" = {
+      source = ./files/alacritty;
+      recursive = true;
+    };
     ".config/emacs" = {
       source = ./files/emacs;
       recursive = true;
     };
     ".config/fish" = {
       source = ./files/fish;
-      recursive = true;
-    };
-    ".config/tmux/themes" = {
-      source = ./files/tmux/themes;
       recursive = true;
     };
   };
@@ -46,8 +46,7 @@
     '';
   };
 
-  # Let Home Manager install and manage itself.
-  programs.alacritty = import ./programs/alacritty.nix;
+  programs.alacritty.enable = true;
   programs.fish = {
     enable = true;
     interactiveShellInit = ''
@@ -61,6 +60,12 @@
     '';
   };
   programs.git = import ./programs/git.nix;
+  # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-  programs.tmux = import ./programs/tmux.nix;
+  programs.tmux = {
+    enable = true;
+    clock24 = true;
+    escapeTime = 0;
+    shortcut = "a";
+  };
 }

@@ -1,0 +1,32 @@
+theme = "everforest_light"
+
+[editor]
+gutters = ["line-numbers", "spacer", "diff", "spacer"]
+line-number = "relative"
+lsp.enable = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.soft-wrap]
+enable = true
+wrap-at-text-width = true
+wrap-indicator = ""
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control"]
+center = ["file-base-name", "file-modification-indicator"]
+right = ["spacer", "selections", "position"]
+
+[editor.whitespace.render]
+space = "none"
+nbsp = "all"
+tab = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+nbsp = "⍽"
+tab = "→"
+tabpad = "·"

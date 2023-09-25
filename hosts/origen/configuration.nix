@@ -48,6 +48,7 @@
       "alacritty"
       "bitwarden"
       "brave-browser"
+      "obsidian"
       "rectangle"
     ];
   };
