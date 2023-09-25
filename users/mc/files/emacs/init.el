@@ -275,7 +275,7 @@
 
 ;; Typewriter Mode (mcookly, local)
 (use-package typewriter-mode
-  :commands typewritet-mode)
+  :commands typewriter-mode)
 
 ;; SETTINGS --------------------------------------------------------------------
 
