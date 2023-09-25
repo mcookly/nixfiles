@@ -27,11 +27,15 @@
       source = ./files/fish;
       recursive = true;
     };
+    ".config/helix" = {
+      source = ./files/helix;
+      recursive = true;
+    };
   };
 
   home.sessionVariables = {
     ALTERNATE_EDITOR = ""; # Emacs will spawn a daemon if one is not running.
-    EDITOR = "ec";
+    EDITOR = "hx";
     NIX_SHELL_PRESERVE_PROMPT = 1;
     # MacOS won't set the shell as default otherwise.
     SHELL = "/run/current-system/sw/bin/fish";

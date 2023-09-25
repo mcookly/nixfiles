@@ -1,4 +1,4 @@
-theme = "everforest_light"
+theme = "base16_transparent"
 
 [editor]
 gutters = ["line-numbers", "spacer", "diff", "spacer"]
@@ -30,3 +30,11 @@ newline = "none"
 nbsp = "⍽"
 tab = "→"
 tabpad = "·"
+
+# For now, I'm binding all my commands to C-x.
+[keys.normal."C-x"]
+d = ":theme base16_transparent"
+l = ":theme catppuccin_latte"
+
+[keys.select."C-x"]
+b = ":pipe fribidi --nobreak --nopad"
