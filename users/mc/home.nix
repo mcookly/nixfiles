@@ -4,7 +4,7 @@
   home.stateVersion = "23.05";
 
   home.packages = with pkgs; [
-    emacs29
+#    emacs29
     fribidi
     fzf
     liberation_ttf
@@ -19,10 +19,10 @@
       source = ./files/alacritty;
       recursive = true;
     };
-    ".config/emacs" = {
-      source = ./files/emacs;
-      recursive = true;
-    };
+#    ".config/emacs" = {
+#      source = ./files/emacs;
+#      recursive = true;
+#    };
     ".config/fish" = {
       source = ./files/fish;
       recursive = true;
