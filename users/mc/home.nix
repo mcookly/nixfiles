@@ -64,6 +64,7 @@
     '';
   };
   programs.git = import ./programs/git.nix;
+  programs.gpg.enable = true;
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
   programs.tmux = {

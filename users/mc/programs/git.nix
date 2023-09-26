@@ -1,14 +1,15 @@
 {
   enable = true;
 
-  user = {
-    name = "Max (mcookly)";
-    email = "git@mxck.onl";
-    signingKey = "5923EFD13DB8D4D8";
-  };
-
-  commit = {
-    gpgSign = true;
+  extraConfig = {
+    user = {
+      name = "Max (mcookly)";
+      email = "git@mxck.onl";
+      signing = {
+        key = "5923EFD13DB8D4D8";
+      };
+    };
+    commit.gpgsign = true;
   };
 
   ignores = [
