@@ -7,6 +7,7 @@
 #    emacs29
     fribidi
     fzf
+    ia-writer-duospace
     liberation_ttf
     mdcat
     pandoc
