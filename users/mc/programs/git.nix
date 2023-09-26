@@ -1,7 +1,15 @@
 {
   enable = true;
 
-  userName = "mcookly";
+  user = {
+    name = "Max (mcookly)";
+    email = "git@mxck.onl";
+    signingKey = "5923EFD13DB8D4D8";
+  };
+
+  commit = {
+    gpgSign = true;
+  };
 
   ignores = [
     # Created by https://www.toptal.com/developers/gitignore/api/emacs,vim,macos,git,latex
