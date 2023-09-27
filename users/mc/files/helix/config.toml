@@ -1,7 +1,8 @@
 theme = "base16_transparent"
 
 [editor]
-gutters = ["diff"]
+line-number = "relative"
+gutters = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
 lsp.enable = false
 
 [editor.cursor-shape]
@@ -10,7 +11,6 @@ normal = "block"
 select = "underline"
 
 [editor.soft-wrap]
-enable = true
 wrap-at-text-width = true
 wrap-indicator = ""
 
@@ -28,12 +28,12 @@ newline = "none"
 [editor.whitespace.characters]
 nbsp = "⍽"
 tab = "→"
-tabpad = "·"
 
 # For now, I'm binding all my commands to C-x.
 [keys.normal."C-x"]
 d = ":theme base16_transparent"
 l = ":theme catppuccin_latte"
+w = { s = ":set-option soft-wrap.enable true", h = ":set-option soft-wrap.enable false" }
 
 [keys.select."C-x"]
 b = ":pipe fribidi --nobreak --nopad"
