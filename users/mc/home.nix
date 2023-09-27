@@ -4,7 +4,6 @@
   home.stateVersion = "23.05";
 
   home.packages = with pkgs; [
-#    emacs29
     fribidi
     fzf
     ia-writer-duospace
@@ -20,10 +19,6 @@
       source = ./files/alacritty;
       recursive = true;
     };
-#    ".config/emacs" = {
-#      source = ./files/emacs;
-#      recursive = true;
-#    };
     ".config/fish" = {
       source = ./files/fish;
       recursive = true;
@@ -57,8 +52,6 @@
     interactiveShellInit = ''
       set fish_greeting "St. Isidore, pray for us!"
 
-      alias ec  "emacsclient -nw"
-      alias ecc "emacsclient -nc"
       alias gc "git checkout"
       alias gs "git status"
       alias lz "lazygit"
