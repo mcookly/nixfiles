@@ -59,9 +59,10 @@
 
       alias ec  "emacsclient -nw"
       alias ecc "emacsclient -nc"
-      alias gc  "git checkout"
-      alias gs  "git status"
-      alias lz  "lazygit"
+      alias gc "git checkout"
+      alias gs "git status"
+      alias lz "lazygit"
+      alias vi "$EDITOR"
     '';
   };
   programs.git = import ./programs/git.nix;
