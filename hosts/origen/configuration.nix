@@ -45,9 +45,9 @@
     enable = true;
     onActivation.upgrade = true; # Slows down `darwin-rebuild`
     casks = [
-      "alacritty"
       "bitwarden"
       "brave-browser"
+      "kitty"
       "obsidian"
       "rectangle"
     ];
