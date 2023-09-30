@@ -106,6 +106,7 @@
       privateBuildPlan = builtins.readFile ./iosevka-sinai.toml;
       set = "sinai";
     })
+    liberation_ttf
   ];
 
   # Users ---------------------------------------------------------------------
