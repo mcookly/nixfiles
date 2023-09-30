@@ -102,7 +102,10 @@
   fonts.fontDir.enable = true;
   
   fonts.fonts = with pkgs; [
-    (google-fonts.override { fonts = [ "Cousine" "Noto Sans" "Noto Serif"]; })
+    (iosevka.override {
+      privateBuildPlan = builtins.readFile ./iosevka-sinai.toml;
+      set = "sinai";
+    })
   ];
 
   # Users ---------------------------------------------------------------------
