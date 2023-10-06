@@ -50,6 +50,7 @@
       "kitty"
       "obsidian"
       "rectangle"
+      "syncthing"
       "zotero"
     ];
   };
