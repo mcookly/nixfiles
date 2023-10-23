@@ -51,6 +51,7 @@
       "obsidian"
       "rectangle"
       "syncthing"
+      "tomatobar"
       "zotero"
     ];
   };
